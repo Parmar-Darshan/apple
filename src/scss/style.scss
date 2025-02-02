@@ -1,0 +1,60 @@
+@import "_app";
+@import "_apps/bgimages";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", serif;
+
+    .msg {
+        left: 31%;
+        top: 19%;
+    }
+
+    .dash-btn {
+        padding-right: 102px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    li {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .dropstart .dropdown-menu[data-bs-popper] {
+        top: 0;
+        right: 34%;
+        left: auto;
+        margin-top: 0;
+        margin-right: var(--bs-dropdown-spacer);
+    }
+
+    .accordion-button {
+        border: none !important;
+        box-shadow: none !important;
+        font-size: 15px !important;
+    }
+
+    .accordion-button::after {
+        filter: invert(1);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z'%3E%3C/path%3E%3C/svg%3E");
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z'%3E%3C/path%3E%3C/svg%3E");
+        filter: invert(1);
+    }
+
+    .offcanvas-body {
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+
+    .offcanvas-body::-webkit-scrollbar {
+        display: none;
+    }
+}
